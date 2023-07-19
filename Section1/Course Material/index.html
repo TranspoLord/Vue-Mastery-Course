@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Basics</title>
     <link
-      href="https://en.wikipedia.org/wiki/Waterfall#/media/File:Geli_Ali_Beg_Waterfall_2023.jpg"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -14,13 +14,13 @@
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1>Vue Events</h1>
     </header>
-    <section id="user-goal">
-      <h2>My Course Goal</h2>
-      <!--<p v-html="outpulGoal()"></p> Never try to do this unless you know what youre doing--> 
-      <p>{{ courseGoal }}</p> <!--Use this, it contains cross-side-scripting attack security-->
-      <p>Learn more about <a v-bind:href="vueLink">Vue</a>.</p>
+    <section id="events">
+      <h2>Events in Action</h2>
+      <button v-on:click="counter++">Add</button>
+      <button v-on:click="counter--">Remove</button>
+      <p>Result: {{ counter }}</p>
     </section>
   </body>
 </html>
